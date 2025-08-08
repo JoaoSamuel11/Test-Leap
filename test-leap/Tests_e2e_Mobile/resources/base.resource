@@ -12,7 +12,7 @@ Start session
     ...                 platformName=Android
     ...	                deviceName=Meu Android
     ...	                automationName=UIAutomator2
-    ...	                app=${EXECDIR}/app/opentrips.apk
+    ...	                app=${EXECDIR}/app/app.apk
     ...	                udid=USY9JN5P7XYHDIA6
     ...                 autoGrantPermissions=true
     
@@ -20,3 +20,4 @@ Start session
 
 Close session
     Close Application
+

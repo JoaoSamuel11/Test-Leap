@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "allure-cypress": "^3.2.1",
+    "cypress": "^14.2.1"
+  },
+  "scripts": {
+    "test:electron": "cypress run --browser electron",
+    "ui:stage": "cypress open --env ENV=STAGE",
+    "ui:hml": "cypress open --env ENV=HML",
+    "ui:prod": "cypress open --env ENV=PROD,allure=true",
+    "cy:stage": "cypress run --env ENV=STAGE",
+    "cy:hml": "cypress run --env ENV=HML",
+    "allure:report": "allure generate --single-file allure-results",
+    "allure:clear": "rm -r allure-results/ allure-report || true",
+    "report": "npm run allure:report && allure open"
+  }
+}
